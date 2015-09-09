@@ -71,7 +71,7 @@ function retrievePathsList(req, res, next) {
     var regExcludes = [];
     var paths = [];
 
-    walk(__dirname + '/../../gallery2/public/data/', regExcludes, function(err, results) {
+    walk(__dirname + '/../../gallery/public/data/', regExcludes, function(err, results) {
         if (err) {
             console.log(err);
             throw err;
